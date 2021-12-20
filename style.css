@@ -1,0 +1,864 @@
+/*убрал стрелки в номере*/
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/*общии стили*/
+body{
+    margin: 0;
+}
+*{
+    font-family: "proxima soft", sans-serif;
+    color:#fff;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+/*header стили*/
+.header{
+    background: url(img/bg.png) no-repeat;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 10% 140px 10%;
+}
+.header__logo img{
+    width: 161px;
+}
+.header__nav{
+    padding: 0 0 5px 0;
+}
+.header__nav ul{
+    display: flex;
+    padding: 0 10px;
+}
+.header__nav li{
+    list-style: none;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+.header__about__us:hover::after{
+    margin: 10px 0 0 0;
+    content:"";
+    display: block;
+    width: 43px;
+    height: 3px;
+    background: #FF0004;
+    position: absolute;
+}
+.header__reviews:hover::after{
+    margin: 10px 0 0 0;
+    content:"";
+    display: block;
+    width: 53px;
+    height: 3px;
+    background: #FF0004;
+    position: absolute;
+}
+.header__contract:hover::after{
+    margin: 10px 0 0 0;
+    content:"";
+    display: block;
+    width: 73px;
+    height: 3px;
+    background: #FF0004;
+    position: absolute;
+}
+.header__why__are__we:hover::after{
+    margin: 10px 0 0 0;
+    width: 78px;
+    content:"";
+    display: block;
+    height: 3px;
+    background: #FF0004;
+    position: absolute;
+}
+.header__main{
+    padding: 0 0 276px 10%;
+}
+.header__main img{
+    width: 514px;
+}
+.header__main p{
+    font-size: 28px;
+}
+.header__burg{
+    visibility: hidden;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor:pointer;
+    z-index: 34;
+}
+.header__burg span{
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    top:7px;
+    width: 100%;
+    height: 5px;
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+}
+.header__burg::after,
+.header__burg::before {
+    content:"";
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+}
+.header__burg::after{
+    bottom:-1px;
+}
+.header__burg::before{
+    top:-2px;
+}
+/*main style part*/
+.main p{
+    color: #242424;
+    font-family: "Proxima Soft Bold";
+}
+.main span{
+    font-family: "Proxima Soft Bold";
+}
+.main li{
+    font-family: "Proxima Soft Bold";
+}
+.main button{
+    font-family: "Proxima Soft Bold";
+}
+.main__question{
+    background: #F8251C;
+    text-transform: uppercase;
+    width: 35%;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.main__question p{
+    color:#fff;
+    font-size: 33px;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+.main__info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    margin: 0 0 83px 0;
+}
+.main__forchld{
+    width: 538px;
+}
+.main__txt-bold{
+    color: #242424;
+    font-size: 33px;
+    font-weight: bold;
+}
+.main__bg-red{
+	background: red;
+}
+.main__txt-smaller{
+    color: #242424;
+}
+.main__imgclds{
+    padding: 0 0 0 67px;
+}
+.main__imgclds img{
+    width: 510px;
+}
+.main__info-reverse{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: 0 0 121px 0;
+}
+.main__youtube{
+    padding: 0 67px 0 0;
+}
+.main__youtube img{
+    width: 510px;
+}
+.main__withbtn{
+    width: 538px;
+}
+.main__btn{
+    background: #033373;
+    border:none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 15px 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 68px 0 0 0;
+}
+.main__btn:hover{
+    box-shadow: 3px 3px 8px #033373;
+}
+.why-youtube{
+    width: 43%;
+    margin: 0 0 54px 0;
+}
+.main__stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 10%;
+}
+.main__center{
+    text-align: center;
+    font-size: 24px;
+    margin: 74px 0 77px 0;
+}
+.main__center p{
+    color: #1B1B1B;
+}
+.main__center-red{
+    text-align: center;
+    font-size: 24px;
+    margin: 74px 0 77px 0;
+    background: #F8251C;
+    padding: 53px;
+}
+.main__center-red p{
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+.main__center-red span{
+    text-transform: uppercase;
+}
+.second-btn{
+    margin: 0;
+}
+.for-whom-when-how-much{
+    width: 43%;
+}
+.for-whom-when-how-much p{
+    padding: 15px 0 15px 0;
+}
+.main__timetable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.main__container-left li,
+.main__container-right li{
+    color: #1B1B1B;
+}
+.main__container-left ul, 
+.main__container-right ul{
+    list-style: url(img/liststyle.png);
+}
+.main__program{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.main__content{
+    padding: 26px 20px;
+    height: 241px;
+    position: relative;
+}
+.main__content img{
+    background: red;
+}
+.main__content p{
+    padding: 24px 0;
+    margin: -4px 0 0 0;
+}
+.main__content:first-child{
+    width: 360px;
+}
+.main__red{
+    background: red;
+    padding: 20px 0;
+}
+.main__content:nth-child(2){
+    width: 360px;
+}
+.main__program p{
+    color:#fff;
+    background: #959595;
+}
+.main__program p:first-child{
+    color:#fff;
+    background: red;
+    padding: 19px 0 19px 0;
+    margin: 0;
+}
+.main__circle{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #959595;
+    top: 0;
+    left: 0;
+}
+.main__circle-purple{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background: #5A637C;
+    top: 0;
+    left: 0;
+}
+.main__circle-txt{
+    display: block;
+    margin: 20px 0;
+}
+.main__backg ul{
+    list-style: url(img/liststyle2.png);
+    background: url(img/0.png) #959595 center no-repeat;
+    padding: 63px;
+    margin: 0;
+}
+.talant{
+    width: 52%; 
+}
+.talant p{
+    padding: 15px 5% 15px 0;
+}
+.main__talant{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    text-align: center;
+}
+.main__talant-left{
+    width: 400px;
+}
+.main__talant p:first-child{
+    background-color: red;
+    color: #fff;
+    height: 35px;
+    padding: 10px;
+}
+.main__talant-numb{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+}
+.main__talant p{
+    border-left:4px solid red;
+    border-bottom:4px solid red;
+}
+.main__teachers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    text-align: center;
+    margin: 0 0 90px 0;
+}
+.main__bg-p{
+    background: #F8251C;
+}
+.main__bg-p p:first-child{
+    padding: 24px 0;
+}
+.main__bg-p p{
+    color:#fff;
+    margin: -4px 0 0 0;
+    padding: 0 0 22px 0;
+}
+.main__interesting{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: 0 0 61px 0;
+}
+.main__interesting-txt p{
+    font-size: 33px;
+}
+.main__achievements{
+    width: 538px;
+}
+.main__achievements p:first-child{
+    font-size: 33px;
+    font-family: "Proxima Soft Bold";
+}
+.main__achievements p{
+    font-family: "Proxima Soft";
+    font-weight: bold;
+}
+.curse{
+    width: 43%;
+    margin: 0 0 54px 0;
+}
+.curse p{
+    padding: 15px 4% 15px 0;
+}
+/*._error{
+    box-shadow: 0 0 15px blue;
+}*/
+.main__mail img{
+    display: none;
+}
+.main__name img{
+    display: none;
+}
+.main__number img{
+    display: none;
+}
+._error img{
+    display: block;
+}
+.main__registration{
+    background: url(img/phone-bg.png) no-repeat;
+    display: flex;
+    padding: 3% 0 2% 0;
+    justify-content: center;
+}
+.main__registration form{
+    padding: 0 0 0 45%;
+}
+form *{
+    outline: none;
+    color: #1B1B1B;
+}
+form button{
+    color: #fff;
+}
+.main__registration input{
+    margin: 12px 0;
+    padding: 11px 15px;
+    width: 365px;
+    border-radius:8px;
+    border:3px solid #F8251C;
+}
+/*bg for uls timetable*/
+.main__days{
+    background: url(img/p1.png);
+    width: 358px;
+    height: 133px;
+}
+.main__days p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__days ul{
+    padding: 35px 0 0 35px;
+}
+.main__time{
+    background: url(img/p3.png);
+    width: 358px;
+    height: 132px;
+}
+.main__time p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__time ul{
+    padding: 35px 0 0 35px;
+}
+.main__cost{
+    background: url(img/p3.png);
+    width: 358px;
+    height: 132px;
+}
+.main__cost p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__cost ul{
+    padding: 35px 0 0 35px;
+}
+/*bg for uls timetable right*/
+.main__how__time{
+    background: url(img/p2.png);
+    width: 361px;
+    height: 132px;
+}
+.main__how__time p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__how__time ul{
+    padding: 35px 0 0 35px;
+}
+.main__how__long{
+    background: url(img/p6.png);
+    width: 358px;
+    height: 132px;
+}
+.main__how__long p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__how__long ul{
+    padding: 35px 0 0 35px;
+}
+.main__child{
+    background: url(img/p.png);
+    width: 359px;
+    height: 132px;
+}
+.main__child p{
+    text-align:center;
+    padding: 24px 0 0 0;
+    color: #fff;
+}
+.main__child ul{
+    padding: 35px 0 0 35px;
+}
+.main__name{
+    position: relative;
+}
+.main__close-name{
+    position: absolute;
+    right: 3%;
+    top:23px;
+}
+.main__number{
+    position: relative;
+}
+.main__close-number{
+    position: absolute;
+    top: 24px;
+    right: 3%;
+}
+.main__mail{
+    position: relative;
+}
+.main__close-mail{
+    position: absolute;
+    right: 10px;
+    top:25px;
+}
+.give{
+    margin: 10px 0 0 0;
+    padding: 10px 50px;
+}
+.main__create{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin: 133px 0 0 0;
+    flex-wrap: wrap;
+}
+.main__map{
+    background: url(img/map.png) no-repeat;
+    height: 614px;
+    margin: 0 0 24px 0;
+}
+.main__container-red{
+    padding: 72px 0 0 0;
+    display: flex;
+    width: 43%;
+    background: #F8251C;
+}
+.main__map-info{
+    display: flex;
+    justify-content: end;
+}
+.main__logo img{
+    padding: 17px 0 0 16px;
+    width: 161px;
+}
+.main__street p{
+    color:#fff;
+}
+.main__street{
+    padding: 0 0 62px 32px;
+}
+.main__street p{
+    font-family: "Proxima Soft";
+}
+.main__hidden{
+    display: none;
+}
+/*footer стили*/
+.footer{
+    background: #292929;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 10%;
+}
+.footer__social{
+    display: flex;
+}
+.footer__social img{
+    padding: 0 0 0 30px;
+}
+/*подключение шрифта*/
+@font-face {
+    font-family: "Proxima Soft"; 
+    src: url("fonts/ProximaSoft-Thin.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+/*адаптивка*/
+@media(max-width:1394px){
+    .main__info{
+        justify-content: center;
+    }
+    .main__forchld{
+        text-align: center;
+    }
+    .main__info-reverse{
+        justify-content: center;
+    }
+    .main__withbtn{
+        text-align: center;
+    }
+    .main__youtube{
+        margin: 79px 0 0 0;
+    }
+}
+@media(max-width:1360px){
+    .main__interesting{
+        justify-content: center;
+    }
+    .main__create{
+        justify-content: center;
+        text-align: center;
+    }
+    .main__achievements-img{
+        margin: 76px 0 0 0;
+    }
+}
+@media(max-width:1283px){
+    .main__stats{
+        margin: 0 auto;
+        justify-content: center;
+        width: 310px;
+    }
+}
+@media(max-width:1149px){
+    .main__talant{
+        justify-content: center;
+    }
+    .main__talant-right{
+        display: none;
+    }
+}
+@media(max-width:974px){
+    .main__container-red{
+        padding: 34px 0 0 0;
+    }
+    .main__logo{
+        display: none;
+    }
+    .main__hidden{
+        display: block;
+    }
+    .main__street{
+        padding: 0 0 62px 20%;
+    }
+    .main__timetable{
+        margin: 0 auto;
+        width: 294px;
+        justify-content: center;
+    }
+}
+@media(max-width:784px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header__main.hidden{
+        visibility: hidden;
+    }
+    .header__nav{
+        position: fixed;
+        top: -200%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        padding: 100px 0 0 0;
+        z-index: 33;
+        left: 0;
+        text-align: center;
+    }
+    .header__burg.active:before{
+        transform: rotate(45deg);
+        top: 6px;
+    }
+    .header__burg.active span{
+        transform: scale(0);
+    }
+    .header__burg.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__nav.active{
+        top: 0;
+    }
+    .header__nav ul{
+        display: block;
+    }
+    .header__nav li{
+        font-family: "Proxima Soft Bold";
+        font-size: 33px;
+        font-weight: bold;
+        padding: 69px 0 0 10px;
+    }
+    .header__burg{
+        visibility: visible;
+    }
+    .main__teachers{
+        justify-content: center;
+    }
+    .main__about{
+        padding: 20px 0 0 0;
+    }
+    .main__registration form{
+        padding: 0 0 0 10%;
+    }
+    .main__question{
+        width: 70%;
+    }
+}
+@media(max-width:689px){
+    .main__interesting-img img{
+        width: 400px;
+    }
+}
+@media(max-width:599px){
+    .footer__street{
+        display: none;
+    }
+    .footer__phone{
+        display: none;
+    }
+    .footer__social{
+        margin: 0 auto;
+        width: 500px;
+        justify-content: space-around
+    }
+}
+@media(max-width:610px){
+    .main__map{
+        background: none;
+        height: auto;
+    }
+    .main__container-red{
+        width: 100%;
+        justify-content: center;
+    }
+    .main__street{
+        padding: 0 0 62px 0;
+    }
+    .main__map-info{
+        text-align: center;
+    }
+}
+@media(max-width:577px){
+    .header__main img{
+        width: 300px;
+    }
+    .main__imgclds img{
+        width: 300px;
+    }
+    .main__youtube img{
+        width: 300px;
+    }
+    .main__achievements-img img{
+        width: 300px;
+    }
+    .main__registration form{
+        padding: 0;
+    }
+    .main__question{
+        width: 90%;
+    }
+}
+@media(max-width:404px){
+    .main__interesting-img img{
+        width: 300px;
+    }
+    .main__imgclds img{
+        width: 250px;
+    }
+    .main__youtube img{
+        width: 250px;
+        padding: 0 0 0 20px;
+    }
+    .main__registration input{
+        width: 225px;
+    }
+    .main__stats{
+        width: 250px;
+    }
+    .main__content{
+        width: 250px;
+    }
+    .main__content img{
+        width: 250px;
+    }
+    .main__content:first-child{
+        width: 250px;
+    }
+    .main__content:nth-child(2){
+        width: 250px;
+    }
+    .main__content:nth-child(2) img{
+        width: 150px;
+    }
+    .main__teachers{
+        width: 180px;
+        margin: 50px auto; 
+    }
+    .main__teachers img{
+        width: 180px;
+    }
+    .main__circle{
+        top:4px;
+        left:-20px;
+    }
+    .main__circle-purple{
+        top:4px;
+        left:-20px;
+    }
+    .main__timetable{
+        width: 280px;
+    }
+    .main__how__time{
+        width: 358px;
+    }
+} 
+/*жирный стиль шрифта*/
+@font-face {
+    font-family: "Proxima Soft Bold"; 
+    src: url("fonts/ProximaSoft-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
